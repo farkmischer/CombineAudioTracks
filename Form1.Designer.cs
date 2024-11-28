@@ -33,6 +33,7 @@
             selectedFileListBox = new ListBox();
             selectDirectoryButton = new Button();
             selectedPathTextBox = new TextBox();
+            ripCdButton = new Button();
             SuspendLayout();
             // 
             // combineTracksButton
@@ -81,11 +82,22 @@
             selectedPathTextBox.Size = new Size(596, 23);
             selectedPathTextBox.TabIndex = 4;
             // 
+            // ripCdButton
+            // 
+            ripCdButton.Location = new Point(861, 57);
+            ripCdButton.Name = "ripCdButton";
+            ripCdButton.Size = new Size(182, 23);
+            ripCdButton.TabIndex = 5;
+            ripCdButton.Text = "Rip CD";
+            ripCdButton.UseVisualStyleBackColor = true;
+            ripCdButton.Click += ripCdButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1126, 450);
+            Controls.Add(ripCdButton);
             Controls.Add(selectedPathTextBox);
             Controls.Add(selectDirectoryButton);
             Controls.Add(selectedFileListBox);
@@ -104,5 +116,6 @@
         private ListBox selectedFileListBox;
         private Button selectDirectoryButton;
         private TextBox selectedPathTextBox;
+        private Button ripCdButton;
     }
 }
